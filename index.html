@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پروژه گریفین - نبردی برای حقیقت در بازارهای مالی</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #2E3440; /* Nord Polar Night */
+            color: #D8DEE9; /* Nord Snow Storm */
+        }
+        .hero-bg {
+            background-color: #242933;
+            background-image: radial-gradient(#4C566A 1px, transparent 1px),
+                              radial-gradient(#4C566A 1px, #242933 1px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+        }
+        .glass-feature {
+            background: rgba(59, 66, 82, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid #4C566A;
+            transition: all 0.3s ease;
+        }
+        .glass-feature:hover {
+            transform: translateY(-5px);
+            border-color: #88C0D0;
+        }
+        .btn-primary {
+            background-color: #88C0D0;
+            color: #2E3440;
+            transition: all 0.2s ease;
+        }
+        .btn-primary:hover {
+            background-color: #8FBCBB;
+            transform: scale(1.05);
+        }
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid #4C566A;
+            color: #ECEFF4;
+            transition: all 0.2s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #4C566A;
+            color: #ECEFF4;
+        }
+        h2 {
+            font-weight: 800;
+            color: #ECEFF4;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2 rtl:space-x-reverse">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-cyan-400" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-2xl font-bold text-white">Griffin</span>
+            </div>
+            <a href="#github" class="btn-secondary px-4 py-2 rounded-lg text-sm font-semibold">
+                مشاهده در گیت‌هاب
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg py-20 sm:py-32">
+            <div class="container mx-auto text-center px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">
+                    نبردی برای <span class="text-cyan-400">حقیقت</span> در بازارهای مالی
+                </h1>
+                <p class="mt-6 max-w-3xl mx-auto text-lg text-gray-300">
+                    پروژه گریفین یک موتور قضاوت الگوریتمی متن‌باز است که با استفاده از علم داده، کیفیت فنی، انصاف و اصالت داده بروکرها را می‌سنجد. ما مه را کنار می‌زنیم و حقیقت را آنطور که هست نشان می‌دهیم: سرد، دقیق و عددی.
+                </p>
+                <div class="mt-10 flex justify-center items-center space-x-4 rtl:space-x-reverse">
+                    <a href="#github" class="btn-primary px-8 py-3 rounded-lg font-bold">
+                        شروع کنید
+                    </a>
+                    <a href="#features" class="btn-secondary px-8 py-3 rounded-lg font-bold">
+                        آشنایی با قابلیت‌ها
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 sm:py-24 bg-[#242933]">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl">زرادخانه ما: تحلیل‌های چندلایه</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-gray-400">
+                        ما فراتر از اسپرد را می‌بینیم. موتور تحلیل گریفین با استفاده از کتابخانه‌هایی چون Pandas, NumPy و SciPy، به دنبال پاسخ سوالات عمیق‌تری است.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Feature 1: Authenticity -->
+                    <div class="glass-feature p-8 rounded-2xl">
+                        <h3 class="text-xl font-bold text-cyan-300">تحلیل اصالت داده</h3>
+                        <p class="mt-4 text-gray-300">
+                            آیا این فید، حقیقت بازار است؟ با **تحلیل همبستگی** بین بروکرها و آزمون‌های آماری مانند **شاپیرو-ویلک** بر روی توزیع تیک‌ها، داده‌های واقعی را از مصنوعی تشخیص می‌دهیم.
+                        </p>
+                    </div>
+                    <!-- Feature 2: Integrity -->
+                    <div class="glass-feature p-8 rounded-2xl">
+                        <h3 class="text-xl font-bold text-yellow-300">تحلیل یکپارچگی داده</h3>
+                        <p class="mt-4 text-gray-300">
+                            آیا فید دچار خطای فنی (Glitch) می‌شود؟ با الگوریتم **رهبر/پیرو**، پرش‌های قیمتی مشکوک را با فیدهای دیگر مقایسه کرده و گلیچ‌های واقعی را از نوسانات بازار تمیز می‌دهیم.
+                        </p>
+                    </div>
+                    <!-- Feature 3: Execution -->
+                    <div class="glass-feature p-8 rounded-2xl">
+                        <h3 class="text-xl font-bold text-purple-300">تحلیل کیفیت اجرا</h3>
+                        <p class="mt-4 text-gray-300">
+                            آیا بروکر منصف است؟ با تحلیل **لغزش نامتقارن (Asymmetric Slippage)**، بررسی می‌کنیم که آیا بروکر در اجرای معاملات صادقانه عمل می‌کند یا لغزش‌های به ضرر شما را ترجیح می‌دهد.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action / Open Source Section -->
+        <section id="github" class="py-20 sm:py-24">
+            <div class="container mx-auto text-center px-4">
+                <h2 class="text-3xl md:text-4xl">یک دعوت به نبرد</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-gray-300">
+                    پروژه گریفین به افتخار جامعه متن‌باز منتشر می‌شود، زیرا ما معتقدیم که "حقیقت" نباید در انحصار کسی باشد. ما شما را، توسعه‌دهندگان، تحلیل‌گران داده و معامله‌گران، به این نبرد دعوت می‌کنیم.
+                </p>
+                <div class="mt-8">
+                    <a href="https://github.com/your-username/griffin-project" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center px-6 py-3 rounded-lg font-bold">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2 rtl:mr-2 rtl:ml-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                        </svg>
+                        <span>مشاهده پروژه در گیت‌هاب</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#242933] py-8">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <p>&copy; 2025 پروژه گریفین. تمام حقوق محفوظ است.</p>
+            <div class="mt-4 flex justify-center items-center space-x-2 rtl:space-x-reverse">
+                <img src="https://www.gnu.org/graphics/gplv3-127x51.png" alt="لوگوی گنو GPLv3" class="h-8">
+                <p class="text-sm">
+                    این پروژه تحت مجوز 
+                    <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-cyan-400">
+                        GNU General Public License v3.0
+                    </a>
+                    منتشر شده است.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
